@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vh;
+            height: 100vh;
+            background-color: #292B3D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form input {
+            width: 300px;
+            height: 50px;
+            color: white;
+            border: 2px solid #03c03c;
+            outline: none;
+            background-color: transparent;
+            font-size: 20px;
+            padding: 0 10px;
+            border-radius: 10px;
+        }
+        form {
+            position: relative;
+        }
+        form label {
+            position: absolute;
+            color: white;
+            left: 15px;
+            top: 15px;
+            font-size: 18px;
+            text-transform: capitalize;
+            transition: top 0.3s;
+            background-color: #292B3D;
+            padding: 0 5px;
+        }
+        form input:focus ~ label{
+            top: -10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="search" id="search" required/>
+        <label for="search">search</label>
+    </form>
+</body>
+</html>
